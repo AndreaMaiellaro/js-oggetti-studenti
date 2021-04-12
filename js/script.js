@@ -1,3 +1,4 @@
+//es 1
 var studente = {
     'nome': 'Andrea',
     'cognome': 'Maiellaro',
@@ -5,16 +6,38 @@ var studente = {
 };
 
 for ( var chiave in studente ) {
-    if (chiave == 'nome') {
-        console.log('chiave :', chiave)
-        console.log('nome :', studente[chiave]);   
-    }
-    if (chiave == 'cognome') {
-        console.log('chiave :', chiave)
-        console.log('cognome :', studente[chiave]);   
-    }
-    if (chiave == 'eta') {
-        console.log('chiave :', chiave)
-        console.log('eta :', studente[chiave]);   
-    }
+
+    console.log('chiave :', chiave)
+    console.log(chiave + ': ' + studente[chiave]);   
+
 }
+
+//es 2 
+var studenti = [
+    {
+        'nome': 'Ciro',
+        'cognome': 'Esposito',
+        'eta': 16
+    },
+    {
+        'nome': 'Alberto',
+        'cognome': 'Bianchi',
+        'eta': 36
+    },
+    {
+        'nome': 'Mario',
+        'cognome': 'Rossi',
+        'eta': 25
+    },
+    {
+        'nome': 'Silvio',
+        'cognome': 'Berlusconi',
+        'eta': 70
+    },
+];
+
+for ( var i = 0; i < studenti.length; i++ ) {
+    console.log(studenti[i].nome);   
+    console.log(studenti[i].cognome);
+}
+
