@@ -6,10 +6,8 @@ var studente = {
 };
 
 for ( var chiave in studente ) {
-
     console.log('chiave :', chiave)
     console.log(chiave + ': ' + studente[chiave]);   
-
 }
 
 //es 2 
@@ -48,12 +46,11 @@ var nuovaEta = parseInt(prompt('Inserisci l eta : '));
 nuovaPersona(nuovoNome, nuovoCognome, nuovaEta);
 
 function nuovaPersona(nuovoNome, nuovoCognome, nuovaEta) {
-    var something = [];
-    something.push({
-    "nome": nuovoNome,
-    "cognome": nuovoCognome,
-    "eta": nuovaEta,
-  });
-  console.log(something);
-  something.push(studenti);
+    var studente = {
+        "nome": nuovoNome,
+        "cognome": nuovoCognome,
+        "eta": nuovaEta,
+    };
+    studenti.push(studente);
+    console.log(studenti);
 }
