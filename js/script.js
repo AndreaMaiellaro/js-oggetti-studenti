@@ -41,3 +41,19 @@ for ( var i = 0; i < studenti.length; i++ ) {
     console.log(studenti[i].cognome);
 }
 
+//es 3
+var nuovoNome = prompt('Inserisci il nome : ');
+var nuovoCognome = prompt('Inserisci il cognome : ');
+var nuovaEta = parseInt(prompt('Inserisci l eta : '));
+nuovaPersona(nuovoNome, nuovoCognome, nuovaEta);
+
+function nuovaPersona(nuovoNome, nuovoCognome, nuovaEta) {
+    var something = [];
+    something.push({
+    "nome": nuovoNome,
+    "cognome": nuovoCognome,
+    "eta": nuovaEta,
+  });
+  console.log(something);
+  something.push(studenti);
+}
